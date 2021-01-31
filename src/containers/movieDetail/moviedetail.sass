@@ -1,0 +1,88 @@
+.movie-detail
+    width: 900px
+    padding-left: 80px
+
+.movie__title
+    margin: 5px 0 0
+    color: white
+    font-weight: bold
+    font-size: 30px
+
+.movie__overview
+    margin: 12px 0
+    font-size: 15px
+    color: #cec8c8e0
+    
+.movie__country
+    display: flex
+    flex-direction: row
+    align-items: center
+    align-content: center
+    h3
+        font-size: 20px
+        padding: 0
+        margin: 0
+        color: white
+
+.movie__country-item
+    font-size: 18px
+    text-align: center
+    height: 25px
+    padding-left: 5px
+
+.movie__detail-row
+    margin-top: 8px
+
+.movie__runtime
+    margin-top: 3px
+
+$colors: yellow, green, blue, purple, blue, red
+.movie-genre__list
+    padding: 0
+    margin: 0
+    width: 300px
+    list-style: none
+    display: flex
+    flex-direction: row
+@for $i from 1 through 6
+    .movie-genre:nth-child(#{length($colors)}n-#{$i})
+        margin: 0 5px
+        display: block
+        width: 100%
+        padding: 4px
+        text-align: center
+        background-color: lighten(nth($colors, random(length($colors))),5%)
+
+.movie__company
+    width: 180px
+    height: 100px
+    margin: 10px 8px 10px 0
+    background-color: white
+    padding: 2px
+
+.slick-slider
+    width: 1150px
+    height: 380px
+    margin-left: -200px
+    margin-top: 15px
+
+.slick-slide
+    width: 248px !important
+    margin: 0px 20px !important
+
+.slick-list
+    height: 380px
+
+.slick-dots li.slick-active button:before
+    color: white !important
+
+.slick-dots li button:before
+    color: white !important
+
+
+.movie-detail__icon
+    margin: 8px 10px 0
+
+.movie-detail__icon svg
+    width: 40px
+    height: 40px

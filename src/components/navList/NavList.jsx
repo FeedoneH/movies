@@ -6,7 +6,7 @@ export const NavList = ({ navigations }) => {
   return (
     <div className="nav-list">
       {navigations.map((navigation) => (
-        <NavItem navigation={navigation} />
+        <NavItem key={navigation.path} navigation={navigation} />
       ))}
     </div>
   );

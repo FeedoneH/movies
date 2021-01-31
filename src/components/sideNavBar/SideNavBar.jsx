@@ -5,7 +5,7 @@ let navigations = [
   { label: "Selected Movies", path: "/selected-movies" },
   { label: "Watch List", path: "/watch-list" },
 ];
-export const SideNavBar = (params) => {
+export const SideNavBar = () => {
   return (
     <div className="navbar">
   

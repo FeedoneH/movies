@@ -2,8 +2,13 @@
 * {
   box-sizing: border-box;
 }
-
+html,
+body {
+  height: 100%;
+  background: #21212c;
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+
 }
